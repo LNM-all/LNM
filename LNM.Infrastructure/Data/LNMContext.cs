@@ -27,8 +27,11 @@ namespace LNM.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<Brand>().ToTable("Brand");
-            
+            modelBuilder.Entity<Category>().ToTable("Category");
+            modelBuilder.Entity<Spu>().ToTable("Spu");
+
         }
     }
 }
